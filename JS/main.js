@@ -57,3 +57,10 @@ field4.addEventListener("blur", saveData);
 field5.addEventListener("blur", saveData);
 
 saveData();
+
+// clear storage 
+// I had a clear form button already so I linked that to localStorage.clear() function
+
+document.getElementById("clear").onclick = function () {
+    var clearStorage = localStorage.clear()
+};
