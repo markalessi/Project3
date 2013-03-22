@@ -19,7 +19,7 @@ var addBorder = function() {
 
 movie.addEventListener("focus", "addBorder");
 
-		//verify that name field is not blank
+/* verify that name field is not blank
  
 if (document.form.Name.value == "") {                      
 alert('Please enter your name.'); return false; }
@@ -39,7 +39,4 @@ alert('Please help me by rating my Site'); return false; }
  
 if (document.form.Query.value == "") {                       
 alert('Please add a question or comment.'); return false; }
- 
-}
- 
-</script> 
+*/ 

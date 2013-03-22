@@ -33,27 +33,33 @@
             <!-- OPTION TO email form later <form name="form" method="post" action="mailto:markalessi@fullsail.edu?SUBJECT=Contact Form" enctype="text/plain" onSubmit="javascript:return checkForm()";> --> 
             
             <!--Submit/Clear/Close Buttons -->
+
             <p>
             <input type="submit" value="Submit" style="font-size:10pt" />&nbsp;
             <input type="reset" value="Clear Form" style="font-size:10pt" />&nbsp;
             <input type="button" value="Close Window" onClick="self.close()">
             </p>  
             <span class="copy"> 
+            
+            <!--End of Submit/Clear/Close Buttons -->
+
+            
+            <!-- Movie Title Input -->
+            
             <p><b>Movie Title:</b>
             </span> 
             
-            <input size="30" name="title" id="movie" style="font-size:10pt" /> 
+            <input size="30" name="title" id="field1" style="font-size:10pt" /> 
 
-            <span class="copy"> 
+            <!-- Movie Genere checkboxes -->
 
+            <span class="copy">
             <p><b>Movie Genere(s):</b>
             <br>
             </span> 
-        
-            <!-- <input size="40" name="Email" style="font-size:10pt" />-->
+
             <form action="">
-        
-            <input type="checkbox" name="genre" value="Action">Action
+            <input type="checkbox" name="genre" id="field2" value="Action">Action
             <input type="checkbox" name="genre" value="Adventure">Adventure
             <input type="checkbox" name="genre" value="Animated">Animated
             <br>
@@ -78,14 +84,21 @@
             <input type="checkbox" name="genre" value="Western">Western
             </p>
             </form> 
+            
+            <!-- Date Input -->
+
             <p>
             <span class="copy"><b>Date Last Watched:</span></b> 
-            <input type="date" name="date" size="30" style="font-size:10pt">
+            <input type="date" name="date" id="field3" size="30" style="font-size:10pt">
             </form>
             </p>
+            
+
+            <!-- Movie Rating Selector --> 
+
             <p>
             <span class="copy"><b>Rate movie:</span></b> 
-            <select name="rating"> 
+            <select name="rating" id="field4"> 
             <option selected>Choose...</option> 
             <option>Excellent Movie</option> 
             <option>Good Movie</option> 
@@ -95,20 +108,28 @@
            
             <span class="copy">
             </p>
+            
+           <!-- Comment/Info Input -->
+
             <p>
             <b>Comments/Info:</b>
             </span> 
             <p>
             <span class="copy"> 
-            <textarea name="info" id="info" rows="6" wrap="virtual" cols="30" style="font-size:10pt"></textarea>
+            <textarea name="info" id="field5" rows="6" wrap="virtual" cols="30" style="font-size:10pt"></textarea>
             </span> 
         </div>
+
+           <!-- Footer/copyright info -->
+
     <footer>
         <br>
         <p><b> 2013 Mark Alessi  &copy;</b></p>
     </footer>
 
     <!-- External JavaScript File  -->
-    <script type="text/javascript" src="JS/main.js"></script>     
+
+    <script type="text/javascript" src="JS/main.js"></script> 
+
     </body>
 </html>
