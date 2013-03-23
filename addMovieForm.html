@@ -26,7 +26,7 @@
         	<h1>Let's Build A Movie Collection!</h1>
         </header>
     
-            <form>
+            <form name="form1" id="form1">
             
             <h2><b>Add A Movie</b></span></h2> 
          
@@ -49,17 +49,16 @@
             <p><b>Movie Title:</b>
             </span> 
             
-            <input size="30" name="title" id="field1" style="font-size:10pt" /> 
+            <input size="30" name="movietitle" id="field1" style="font-size:10pt" /> 
 
             <!-- Movie Genere checkboxes -->
 
             <span class="copy">
             <p><b>Movie Genere(s):</b>
             <br>
-            </span> 
-
-            <form action="">
-            <input type="checkbox" name="genre" id="field2" value="Action">Action
+             
+            <form action="" name="checkbox">
+            <input type="checkbox" name="genre"  value="Action" id="field2">Action
             <input type="checkbox" name="genre" value="Adventure">Adventure
             <input type="checkbox" name="genre" value="Animated">Animated
             <br>
@@ -84,7 +83,8 @@
             <input type="checkbox" name="genre" value="Western">Western
             </p>
             </form> 
-            
+            </span>
+
             <!-- Date Input -->
 
             <p>
