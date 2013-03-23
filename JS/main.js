@@ -109,7 +109,7 @@ function getData(){
 		var value = localStorage.getItem(key);
 		var obj = JSON.parse(value);
 		var makeSubList = document.createElement("ul") 
-		makeli.appendChild(makeSubList)
+		makeli.appendChild(makeSubList);
 		for (var n in obj) {
 			var makeSubli = document.createElement("li");
 			var optSubText = obj[n][0]+" "+obj[n][1];
@@ -117,3 +117,20 @@ function getData(){
 		}
 	}	
 }	
+//
+
+window.addEventListener("DOMContentLoaded", function()) {
+	function $(x){
+		var theElement = document.getElementById(x);
+		return theElement;
+	}
+
+	var contactGroups = ["--Choose A Group--", "Frineds", "Family", "Work"];
+
+	var displayLink = $("displayLink");
+	displayLink.addEventListener("click", getData);
+	var clearLink = $("clear");
+	clearLink.addEventListener("click", clearLocal);
+	var save = $("submit");
+	save.addEventListener("click", storeData);
+});
